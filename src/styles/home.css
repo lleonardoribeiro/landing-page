@@ -1,0 +1,111 @@
+#home {
+  display: flex;
+  height: 70vh;
+  position: relative;
+}
+
+#cta {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 3vh;
+}
+
+#cta .title {
+  width: 100%;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+#cta .title span {
+  color: #e9a209;
+}
+
+#cta .description {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+#phone_buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+}
+
+#banner img {
+  height: 100%;
+  width: fit-content;
+  margin-top: 4vh;
+  margin-right: 10%;
+  z-index: 2;
+}
+
+.shape {
+  background-color: #e9a209;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50% 10% 50% 20%;
+  margin-top: 0vh;
+  top: 10%;
+  right: 8%;
+  z-index: 1;   
+}
+
+@media screen and (max-width: 1440px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img,
+  #home .shape {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #social-media-buttons {
+    justify-content: center;
+  }
+
+  #cta_buttons .btn-default a {
+    justify-content: center;
+  }
+} 
